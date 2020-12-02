@@ -127,14 +127,13 @@ a {
   height: 80px;
   width: 100%;
   background-color: #282828;
-
 }
 
 /* END PLAYING BAR */
 
 /* MAIN CONTAINER */
   .main-container {
-    /* background-color: #888; */
+    /* background-color: #141922; */
     height: 100%;
     overflow-y: auto;
   }
