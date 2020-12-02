@@ -8,7 +8,6 @@
   font-family: 'Noto Sans JP', sans-serif;
 }
 
-
 li {
   list-style: none;
 }
@@ -41,7 +40,6 @@ a {
   background: #080B12;
   height: 80px;
   width: 100%;
-  z-index: -1;
 }
 
 .top-nav button {
@@ -59,6 +57,7 @@ a {
 /* LEFT NAV */
 
 .left-nav {
+  position: fixed;
   height: 100%;
   max-width: 220px;
   background-color: #000000;
@@ -123,12 +122,20 @@ a {
 
 /* PLAYING BAR */
 .playing-bar {
-  /* position: sticky;
-  top: 0; */
-  z-index: -1;
-  height: 60px;
+  position: fixed;
+  bottom: 0;
+  height: 80px;
   width: 100%;
   background-color: #282828;
+
 }
 
 /* END PLAYING BAR */
+
+/* MAIN CONTAINER */
+  .main-container {
+    /* background-color: #888; */
+    height: 100%;
+    overflow-y: auto;
+  }
+/* END MAIN CONTAINER */
