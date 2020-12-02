@@ -3,7 +3,24 @@
   padding: 0;
   border: 0;
   box-sizing: border-box;
+  font-family: 'Noto Sans JP', sans-serif;
 }
+
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.uppercase {
+ text-transform: uppercase;
+}
+
+
 
 .wrapper {
   height: 100vh;
@@ -11,13 +28,16 @@
   max-width: 100%;
 }
 
+
+/* TOP NAV */
 .top-nav {
   display: flex;
   justify-content: flex-end;
   position: fixed;
-  background-color: #080B12;
+  background: #080B12;
   height: 80px;
   width: 100%;
+  z-index: -1;
 }
 
 .top-nav button {
@@ -29,3 +49,61 @@
   padding: 10px 40px;
   margin-right: 10px;
 }
+/* END TOP NAV */
+
+
+/* LEFT NAV */
+.left-nav {
+  height: 100%;
+  max-width: 200px;
+  background-color: #000000;
+  color: #fff;
+  padding: 20px;
+}
+
+.spotify-logo  {
+  background-image: url(../img/logo.svg);
+  background-repeat: no-repeat;
+  width: auto;
+  height: 40px;
+}
+
+.left-nav span {
+  font-size: 30px;
+  vertical-align: middle;
+}
+
+.left-nav li {
+  font-size: 0.8em;
+}
+
+.left-nav li:first-of-type {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  opacity: 1;
+}
+
+.left-nav li:nth-child(1n+2) {
+  padding: 10px 0;
+  opacity: 0.5;
+}
+
+.left-nav li:hover {
+  opacity: 1;
+}
+
+.left-nav li>a>img {
+  width: 30px;
+  vertical-align: middle;
+  padding-right: 5px;
+}
+
+.playlist {
+  padding: 0 10px;
+  color: #000000;
+  font-size: 1.5em;
+  background-color: #fff;
+}
+
+
+/* END LEFT NAV */
