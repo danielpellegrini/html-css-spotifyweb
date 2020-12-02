@@ -1,3 +1,5 @@
+/* UTILITIES CLASSES */
+
 * {
   margin: 0;
   padding: 0;
@@ -19,6 +21,8 @@ a {
 .uppercase {
  text-transform: uppercase;
 }
+
+/* END UTILITIES CLASSES */
 
 
 
@@ -53,9 +57,10 @@ a {
 
 
 /* LEFT NAV */
+
 .left-nav {
   height: 100%;
-  max-width: 200px;
+  max-width: 220px;
   background-color: #000000;
   color: #fff;
   padding: 20px;
@@ -78,13 +83,13 @@ a {
 }
 
 .left-nav li:first-of-type {
-  padding-top: 20px;
-  padding-bottom: 10px;
+  padding-top: 25px;
+  padding-bottom: 5px;
   opacity: 1;
 }
 
 .left-nav li:nth-child(1n+2) {
-  padding: 10px 0;
+  padding: 5px 0;
   opacity: 0.5;
 }
 
@@ -99,11 +104,31 @@ a {
 }
 
 .playlist {
-  padding: 0 10px;
-  color: #000000;
-  font-size: 1.5em;
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: middle;
   background-color: #fff;
+  position: relative;
+  padding: 15px;
 }
 
+.playlist span {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  color: #000000;
+  font-size: 2em;
+}
 
 /* END LEFT NAV */
+
+/* PLAYING BAR */
+.playing-bar {
+  /* position: sticky;
+  top: 0; */
+  z-index: -1;
+  height: 60px;
+  width: 100%;
+  background-color: #282828;
+}
+
+/* END PLAYING BAR */
