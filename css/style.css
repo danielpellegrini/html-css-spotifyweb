@@ -172,24 +172,32 @@ main {
 
 
 /* MAIN CONTENT  */
-
 .items-container {
   display: flex;
   padding: 15px;
 }
 
 .item {
-max-width: calc(100% / 6 - 20px);
-height: auto;
-margin-right: 20px;
-padding-bottom: 5px;
+  margin-right: 20px;
+  padding-bottom: 5px;
+  text-align: center;
+  max-width: calc(100% / 6 - 5px);
+}
+
+.item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.item h5 {
+  font-size: 0.7em;
 }
 
 .popular-artists {
   border-radius: 50%;
 }
 
-section h3, section h6 {
+.main-row h3, .main-row h6:first-of-type {
   padding-left: 20px;
 }
 
