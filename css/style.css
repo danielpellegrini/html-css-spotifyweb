@@ -175,14 +175,14 @@ main {
 
 .items-container {
   display: flex;
-  padding: 20px 20px;
-  /* flex-wrap: wrap; */
+  padding: 15px;
 }
 
 .item {
-max-width: calc(100% / 6 - 40px);
+max-width: calc(100% / 6 - 20px);
 height: auto;
-margin-right: 40px;
+margin-right: 20px;
+padding-bottom: 5px;
 }
 
 .popular-artists {
@@ -208,3 +208,47 @@ footer {
   background-color: #282828;
 }
 /* END PLAYING BAR */
+
+/* --- MEDIA QUERIES --- */
+
+@media screen and (max-width: 992px) {
+  .items-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .item {
+  max-width: calc(100% / 6 - 5px);
+  height: auto;
+  margin-right: 5px;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .items-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .item {
+  max-width: calc(100% / 4 - 5px);
+  height: auto;
+  margin-right: 5px;
+  }
+
+}
+
+@media screen and (max-width: 576px) {
+  .items-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .item {
+  max-width: calc(100% / 2 - 5px);
+  height: auto;
+  margin-right: 5px;
+  }
+
+}
