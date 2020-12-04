@@ -17,7 +17,6 @@
   <div id="wrapper">
     <!-- main container -->
     <main>
-
       <!-- left nav -->
       <nav class="left-nav">
         <div class="spotify-logo">
@@ -65,7 +64,7 @@
         <!-- recently played -->
         <div class="main-row">
           <div>
-            <h3>Recently played</h3>
+            <h1>Recently played</h1>
           </div>
           <div class="items-container">
             <div class="item">
@@ -105,8 +104,8 @@
         <!-- made for you -->
         <div class="main-row">
           <div>
-            <h3>Made for John Doe</h3>
-            <h6>The more you listen, the more accurate the suggestions will be. </h6>
+            <h1>Made for John Doe</h1>
+            <h4>The more you listen, the more accurate the suggestions will be. </h4>
           </div>
           <div class="items-container">
             <div class="item">
@@ -124,8 +123,8 @@
         <!-- most popular artists -->
         <div class="main-row">
           <div>
-            <h3>Popular artists</h3>
-            <h6>The more you listen, the more accurate the suggestions will be. </h6>
+            <h1>Popular artists</h1>
+            <h4>The more you listen, the more accurate the suggestions will be. </h4>
           </div>
           <div class="items-container">
             <div class="item">
@@ -141,15 +140,63 @@
         <!-- end most popular artists -->
 
       </section>
-      <!-- end main content -->
-
+      <!-- end main content -->      
     </main>
     <!-- end main container -->
 
-    <!-- footer - playing bar -->
-    <footer>
+    <!-- footer - player bar -->
+    <footer id="player">
+
+      <!--Album Playing-->
+      <div class="nowplaying-container">
+        <img src="img/sinister.jpeg" alt="sinister" class="pointer">
+        <div class="album-name">
+          <h5>Sinister</h5>
+          <h6>Song name</h6>
+        </div>
+        <div class="album-icons">
+          <a href="#"><i class="far fa-heart"></i></a>
+          <a href="#"><i class="far fa-folder"></i></a>
+        </div>
+      </div>
+      <!--Album Playing End-->
+
+      <!--Player bar-->
+      <div class="playerbar-container">
+        <div class="playerbar">
+          <ul>
+            <li><a href="#"><i class="fas fa-random"></i></a></li>
+            <li><a href="#"><i class="fas fa-step-backward"></i></a></li>
+            <li><a href="#"><i class="far fa-play-circle"></i></a></li>
+            <li><a href="#"><i class="fas fa-step-forward"></i></a></li>
+            <li><a href="#"><i class="fas fa-redo-alt"></i></a></li>
+          </ul>
+        </div>
+        <div class="progressbar-container">
+          <span class="song-progress">0:25</span>
+          <div class="progressbar">
+            <div class="partial-bar"></div>
+          </div>
+          <span class="song-lenght">4:35</span>
+        </div>
+      </div>
+      <!--end player bar-->
+
+      <!--volume bar-->
+      <div class="volume-container">
+        <div class="volume">
+          <a href="#"><i class="fas fa-list-ul"></i></a>
+          <a href="#"><i class="fas fa-desktop"></i></a>
+          <a href="#"><i class="fas fa-volume-up"></i></a>
+        </div>
+        <div class="volume-bar">
+          <div class="volume-partial-bar"></div>
+        </div>
+      </div>
+      <!--end volume bar-->
+
     </footer>
-    <!-- footer - playing bar -->
+    <!-- footer - player bar -->
 
   </div>
   <!-- end wrapper -->
