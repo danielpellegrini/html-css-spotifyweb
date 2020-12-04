@@ -460,11 +460,18 @@ section h4, section h6 {
 
 @media screen and (max-width: 576px) {
   .left-nav {
-    width: 50px
+    width: 50px;
+    padding: 10px;
   }
 
   .disabled-small {
     display: none;
+  }
+
+  .spotify-logo {
+    background-image: url(../img/logo-small.svg);
+    width: 30px;
+    background-size: contain;
   }
 
   .content {
