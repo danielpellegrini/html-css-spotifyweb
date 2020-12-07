@@ -30,6 +30,18 @@ a {
   opacity: 1;
 }
 
+.padding-l {
+  padding-left: 20px;
+}
+
+.margin-b {
+  margin-bottom: 20px;
+}
+
+.margin-logo {
+  margin: 20px;
+}
+
 /* END UTILITY CLASSES */
 
 
@@ -50,13 +62,42 @@ main {
 
 /* LEFT NAV */
 
+#top-content {
+
+}
+
+#top-content img {
+  max-width: 30px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.user {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 10px;
+  margin-bottom: 10px;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.enabled {
+  border-left: 3px solid #ADFF2F;
+  opacity: 1;
+}
+
+.user:hover {
+  border-left: 3px solid #ADFF2F;
+  opacity: 1;
+}
+
 .left-nav {
   background-color: #000000;
   float: left;
   width: 220px;
   height: 100%;
   overflow-y: hidden;
-  padding: 20px;
   display: flex;
   flex-direction: column;
 }
@@ -96,20 +137,28 @@ main {
   padding-right: 5px;
 }
 
-.playlist {
+#playlist {
   margin-right: 10px;
   display: inline-block;
   vertical-align: middle;
   background-color: #fff;
   position: relative;
-  padding: 15px;
+  width: 35px;
+  height: 35px;
+  border-radius: 2px;
 }
 
-.playlist span {
+div #playlist:hover {
+  background-color: #ADFF2F;
+}
+
+#playlist span {
   position: absolute;
-  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 54%;
+  transform: translate(-54%, -54%);
   color: #000000;
-  font-size: 2em;
+  font-size: 3em;
 }
 
 #bottom-content li:nth-child(2)::before {
@@ -198,8 +247,8 @@ main {
 
 .main-content-nav li {
   display: inline-block;
-  padding: 0 10px;
-  font-size: 0.8em;
+  padding: 10px 10px;
+  font-size: 0.7em;
 }
 
 .main-content-nav li:first-of-type::after {
@@ -226,7 +275,7 @@ main {
 
 /* MAIN CONTENT  */
 .items-container {
-  padding: 15px;
+  padding: 20px;
   display: flex;
 }
 
@@ -246,7 +295,7 @@ main {
 }
 
 .item h5 {
-  margin-top: 5px;
+  margin-top: 10px;
   font-size: 1em;
 }
 
@@ -429,11 +478,11 @@ section h4, section h6 {
 .fa-step-backward,
 .fa-step-forward,
 .fa-redo-alt {
-  font-size: 0.8em;
+  font-size: 1em;
 }
 
 #player .fa-play-circle {
-  font-size: 1.5em;
+  font-size: 2em;
 }
 
 #player h6:hover {
@@ -586,6 +635,23 @@ section h4, section h6 {
     flex-grow: 1;
   }
 
+  .user {
+    border: none;
+    padding: 0;
+    margin: 10px 0;
+    /* width: 50px; */
+  }
+
+  /* #top-content img {
+    max-width: 30px;
+    vertical-align: middle;
+    margin-right: 0;
+  } */
+
+  .user:hover {
+    border: none;
+  }
+
   .disabled-small {
     display: none;
   }
@@ -593,6 +659,7 @@ section h4, section h6 {
   .spotify-logo {
     background-image: url(../img/logo-small.svg);
     width: 30px;
+    margin: 10px 0;
     background-size: contain;
   }
 
@@ -600,7 +667,7 @@ section h4, section h6 {
     width: 100%;
   }
 
-  #bottom-content li:first-child {
+  #bottom-content li:nth-child(2)::before {
     border: none;
   }
 

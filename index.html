@@ -20,17 +20,30 @@
 
       <!-- left nav -->
       <nav class="left-nav">
-        <div class="spotify-logo"></div>
-        <ul id="top-content">
-          <li><a href=""><img src="img/home.svg" alt="home"><span class="disabled-small">Home</span></a></li>
-          <li><a href=""><img src="img/search.svg" alt="search"><span class="disabled-small">Search</span></a></li>
-          <li><a href=""><img src="img/libreria.svg" alt="libreria"><span class="disabled-small">Your Library</span></a></li>
-        </ul>
-        <ul class="disabled-small" id="middle-content">
+        <div class="spotify-logo margin-logo"></div>
+
+        <div id="top-content">
+          <div class="user enabled">
+            <img src="img/home.svg" alt="home">
+            <a href="" class="disabled-small">Home</a>
+          </div>
+          <div class="user">
+            <img src="img/search.svg" alt="search">
+            <a href="" class="disabled-small">Search</a>
+          </div>
+          <div class="user">
+            <img src="img/libreria.svg" alt="libreria">
+            <a href="" class="disabled-small">Your Library</a>
+          </div>
+        </div>
+
+        <ul class="disabled-small padding-l" id="middle-content">
           <li class="uppercase"><a href=""></a>playlist</li>
-          <li><a href="">
-              <div class="playlist"><span>+</span></div>Create playlist
-            </a></li>
+          <li>
+            <a href="">
+              <div id="playlist"><span>+</span></div>Create playlist
+            </a>
+          </li>
           <li><a href="">Playlist name</a></li>
           <li><a href="">Playlist name</a></li>
           <li><a href="">Playlist name</a></li>
@@ -39,6 +52,7 @@
           <li><a href="">Playlist name</a></li>
           <li><a href="">Playlist name</a></li>
         </ul>
+
         <ul id="bottom-content">
           <li><a href=""><img src="img/download.svg" id="download-ico" alt="download icon"></a><span class="disabled-small">Install App</span></li>
           <li><a href=""><img src="img/profile.svg" id="profile-ico" alt="profile icon"></a><span class="disabled-small">John Doe</span></li>
